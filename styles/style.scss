@@ -1,0 +1,16 @@
+@import "navbar.scss";
+@import "section-one.scss";
+@import "section-two.scss";
+@import "section-three.scss";
+@import "section-four.scss";
+
+*{
+    margin: 0 auto;
+}
+
+.flex{
+    display:flex;
+    @media (max-width: 750px) {
+        display: block;
+    }
+}

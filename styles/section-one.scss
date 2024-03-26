@@ -1,0 +1,54 @@
+.section-one {
+    margin-top: 6rem;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__content__title {
+        font-family: Raleway;
+        font-size: 2.1875rem;
+        font-weight: 400;
+    }
+
+    &__content__text {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        width: 65%;
+    }
+
+    &__content__img{
+        margin-top: 3rem;
+        @media (max-width: 750px) {
+            overflow: hidden;
+        }
+        
+    }
+
+    &__content__img__background{
+        width: 100%;
+        @media (max-width: 750px) {
+            transform: scale(1.84);
+        }
+    }
+
+    &__content__button {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+        background-color: #08A6E4;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 3rem;
+        padding: 1.25rem 5rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #67c0e3;
+        }
+    }
+}

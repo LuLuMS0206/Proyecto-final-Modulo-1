@@ -1,0 +1,109 @@
+.section-two {
+
+    text-align: center;
+    font-family: "Raleway";
+    margin-top: 2rem;
+    
+
+    &__title {
+        font-weight: 300;
+        font-size: 1.875rem;
+        line-height: 2.1875rem;
+        width: 65%;
+        @media (min-width: 740px) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__item__one {
+        margin-top: 1rem;
+    }
+
+    &__item__one__imgEllipse{
+        transform: translate(28%, 7%);
+    }
+
+    &__item__one__imgGroup{
+        transform: translate(-38%, -11%);
+    }
+
+    &__item__one__textNumber {
+        font-weight: 800;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.3725rem;
+        margin-top: 1rem;
+    }
+
+    &__item__one__text {
+        font-weight: 400;
+        font-size: 1.0625rem;
+        line-height: 1.25rem;
+        color: #A5A5A5;
+        margin-top: 1rem;
+    }
+
+    &__item__two {
+        margin-top: 1rem;
+    }
+
+    &__item__two__imgEye{
+        transform: translate(-29%, -31%);
+    }
+
+    &__item__two__imgEllipse{
+        transform: translate(45%, 7%);
+    }
+
+    &__item__two__textNumber {
+        font-weight: 800;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.3725rem;
+        margin-top: 1rem;
+    }
+
+    &__item__two__text {
+        font-weight: 400;
+        font-size: 1.0625rem;
+        line-height: 1.25rem;
+        color: #A5A5A5;
+        margin-top: 1rem;
+        width: 32%;
+        @media (min-width: 740px) {
+            width: 60%;
+        }
+    }
+
+    &__item__three {
+        margin-top: 1rem;
+    }
+
+    &__item__three__imgEllipse{
+        transform: translate(43%, 7%);
+    }
+
+    &__item__three__imgCatalog{
+        transform: translate(-24%, -8%);
+    }
+
+    &__item__three__textNumber {
+        font-weight: 800;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.3725rem;
+        margin-top: 1rem;
+    }
+
+    &__item__three__text {
+        font-weight: 400;
+        font-size: 1.0625rem;
+        line-height: 1.25rem;
+        color: #A5A5A5;
+        margin-top: 1rem;
+        width: 28%;
+        @media (min-width: 740px) {
+            width: 61%;
+        }
+    }
+}

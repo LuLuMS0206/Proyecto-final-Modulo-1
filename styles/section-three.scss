@@ -1,0 +1,122 @@
+.section-three{
+    margin-top: 3rem;
+    background: #F7F7F7;
+    border: 1px solid #E8E9ED;
+
+
+    &__cardOne{
+        margin: 2rem;
+        background-color: white;
+        padding: 1.5rem;
+        border: 1px solid #E8E9ED;
+        border-radius: 0.5rem;
+        @media (min-width: 740px) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__cardOne__imgMack{
+        transform: translate(20%, 8%);
+        z-index: 9;
+        position: relative;
+    }
+
+    &__cardOne__imgFrame{
+        transform: translate(-50%, -24%);
+        position: absolute;
+    }
+
+    &__cardOne__content__title{
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.2012rem;
+        margin-top: 1rem;
+    }
+
+    &__cardOne__content__text{
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        margin-top: 3rem;
+    }
+
+    &__cardTwo{
+        margin: 2rem;
+        background-color: white;
+        padding: 1.5rem;
+        border: 1px solid #E8E9ED;
+        border-radius: 0.5rem;
+        @media (min-width: 740px) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__cardTwo__imgEllipse{
+        position: absolute;
+        left: 6rem;
+        @media (min-width: 740px) {
+            
+        }
+    }
+
+    &__cardTwo__imgIphone{
+        position: relative;
+        left: 3rem;
+    }
+
+    &__cardTwo__content__title{
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.2012rem;
+        width: 99%;
+        margin-top: 1rem;
+    }
+
+    &__cardTwo__content__text{
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        margin-top: 3rem;
+    }
+
+
+
+    &__cardThree{
+        margin: 2rem;
+        background-color: white;
+        border: 1px solid #E8E9ED;
+        border-radius: 0.5rem;
+    }
+
+    &__cardThree__content__title{
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.2012rem;
+        
+    }
+
+    &__cardThree__content{
+        padding: 1.5rem;
+    }
+
+    &__cardThree__content__text{
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        margin-top: 3rem;
+    }
+
+
+    &__cardThree__imgTrumpet{
+        background-color: #55DFB4;
+        border: 1px solid #E8E9ED;
+        width: 100%;
+        border-radius: 0.3125rem;
+    }
+}
