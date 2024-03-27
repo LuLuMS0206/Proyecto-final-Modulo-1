@@ -286,11 +286,10 @@
 .section-four__cardOne__pricing {
   border: 1px solid #FB3B64;
   border-radius: 1.125rem;
-  margin-top: 1rem;
   position: relative;
   display: flex;
-  padding: 3rem;
-  margin: 3rem;
+  padding: 2rem 1rem;
+  margin: 2rem;
 }
 .section-four__cardOne__pricing__text {
   font-family: "Raleway";
@@ -307,6 +306,7 @@
 }
 .section-four__cardOne__pricing__list {
   list-style: none;
+  padding: 0.3rem;
 }
 .section-four__cardOne__pricing__button {
   background-color: #FB3B64;
@@ -319,17 +319,17 @@
   font-size: 0.8125rem;
   line-height: 1.1062rem;
   position: absolute;
-  top: 86%;
-  left: 20%;
+  top: 90%;
+  left: 22%;
 }
 .section-four__cardTwo__pricing {
   border: 1px solid #07ACE6;
   border-radius: 1.125rem;
-  margin-top: 2rem;
   position: relative;
   display: flex;
-  padding: 3rem;
-  margin: 3rem;
+  padding: 2rem 1rem;
+  margin: 2rem;
+  margin-top: 4rem;
 }
 .section-four__cardTwo__pricing__text {
   font-family: "Raleway";
@@ -346,6 +346,7 @@
 }
 .section-four__cardTwo__pricing__list {
   list-style: none;
+  padding: 0.3rem;
 }
 .section-four__cardTwo__pricing__button {
   background-color: #07ACE6;
@@ -358,17 +359,17 @@
   font-size: 0.8125rem;
   line-height: 1.1062rem;
   position: absolute;
-  top: 86%;
-  left: 20%;
+  top: 90%;
+  left: 22%;
 }
 .section-four__cardThree__pricing {
   border: 1px solid #55DFB4;
   border-radius: 1.125rem;
-  margin-top: 1rem;
   position: relative;
   display: flex;
-  padding: 3rem;
-  margin: 3rem;
+  padding: 2rem 1rem;
+  margin: 2rem;
+  margin-top: 4rem;
 }
 .section-four__cardThree__pricing__text {
   font-family: "Raleway";
@@ -385,6 +386,7 @@
 }
 .section-four__cardThree__pricing__list {
   list-style: none;
+  padding: 0.3rem;
 }
 .section-four__cardThree__pricing__button {
   background-color: #55DFB4;
@@ -397,8 +399,100 @@
   font-size: 0.8125rem;
   line-height: 1.1062rem;
   position: absolute;
-  top: 86%;
-  left: 20%;
+  top: 90%;
+  left: 22%;
+}
+.section-four__cardThree__pricing__textLimited, .section-four__cardTwo__pricing__textLimited {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.8806rem;
+}
+.section-four__cardsItem {
+  margin-right: 0.5rem;
+}
+.section-four__cardsContent {
+  margin-bottom: 1rem;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.1919rem;
+}
+.section-four__cardOne__pricing__, .section-four__cardTwo__pricing__, .section-four__cardThree__pricing__ {
+  display: flex;
+  align-items: center;
+}
+
+.section-five-form {
+  padding: 3rem 1.5rem;
+}
+.section-five-form__title {
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.935rem;
+}
+.section-five-form__text {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+.section-five-form__contacts {
+  margin-top: 2rem;
+}
+.section-five-form__contacts__call {
+  margin-top: 0.5rem;
+}
+.section-five-form__contact {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  color: #A5A5A5;
+  display: inline-flex;
+}
+.section-five-form__contact__icon {
+  color: #08A6E4;
+}
+.section-five-form__content__label {
+  color: #08A6E4;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.205rem;
+}
+.section-five-form__content__input {
+  border: none;
+  border-bottom: 1.5px solid #95989A;
+  width: 97%;
+  margin-top: 1.5rem;
+}
+.section-five-form__content__btn {
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  background-color: #08A6E4;
+  border: none;
+  border-radius: 2.1875rem;
+  color: #FFFFFF;
+  padding: 1.25rem 5.5rem;
+  margin-top: 2rem;
+  display: flex;
+  margin-right: 1rem;
+}
+.section-five-form__content__consent {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.section-five-form__content__consent__label {
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.0212rem;
+  color: #707070;
+}
+.section-five-form__content {
+  margin-top: 2rem;
 }
 
 * {

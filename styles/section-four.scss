@@ -1,7 +1,7 @@
-.section-four{
+.section-four {
 
 
-    &__title{
+    &__title {
         font-family: "Raleway";
         font-weight: 400;
         font-size: 2.25rem;
@@ -10,24 +10,24 @@
         margin-top: 3rem;
     }
 
-    &__cardOne__pricing{
+    &__cardOne__pricing {
         border: 1px solid #FB3B64;
         border-radius: 1.125rem;
-        margin-top: 1rem;
+        // margin-top: 1rem;
         position: relative;
         display: flex;
-        padding: 3rem;
-        margin: 3rem;
+        padding: 2rem 1rem;
+        margin: 2rem;
     }
 
-    &__cardOne__pricing__text{
+    &__cardOne__pricing__text {
         font-family: "Raleway";
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
     }
 
-    &__cardOne__pricing__textPricing{
+    &__cardOne__pricing__textPricing {
         font-family: "Open Sans";
         color: #FB3B64;
         font-weight: 300;
@@ -35,11 +35,12 @@
         line-height: 4rem;
     }
 
-    &__cardOne__pricing__list{
+    &__cardOne__pricing__list {
         list-style: none;
+        padding: 0.3rem;
     }
 
-    &__cardOne__pricing__button{
+    &__cardOne__pricing__button {
         background-color: #FB3B64;
         border-radius: 1.4375rem;
         border: none;
@@ -50,41 +51,42 @@
         font-size: 0.8125rem;
         line-height: 1.1062rem;
         position: absolute;
-        top: 86%;
-        left: 20%;
+        top: 90%;
+        left: 22%;
     }
 
-    &__cardTwo__pricing{
+    &__cardTwo__pricing {
         border: 1px solid #07ACE6;
         border-radius: 1.125rem;
-        margin-top: 2rem;
         position: relative;
         display: flex;
-        padding: 3rem;
-        margin: 3rem;
+        padding: 2rem 1rem;
+        margin: 2rem;
+        margin-top: 4rem;
     }
 
-    &__cardTwo__pricing__text{
+    &__cardTwo__pricing__text {
         font-family: "Raleway";
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
     }
 
-    &__cardTwo__pricing__textPricing{
+    &__cardTwo__pricing__textPricing {
         font-family: "Open Sans";
-        color:  #07ACE6;
+        color: #07ACE6;
         font-weight: 300;
         font-size: 2.875rem;
         line-height: 4rem;
     }
 
-    &__cardTwo__pricing__list{
+    &__cardTwo__pricing__list {
         list-style: none;
+        padding: 0.3rem;
     }
 
-    &__cardTwo__pricing__button{
-        background-color:  #07ACE6;
+    &__cardTwo__pricing__button {
+        background-color: #07ACE6;
         border-radius: 1.4375rem;
         border: none;
         color: #FFFFFF;
@@ -94,41 +96,42 @@
         font-size: 0.8125rem;
         line-height: 1.1062rem;
         position: absolute;
-        top: 86%;
-        left: 20%;
+        top: 90%;
+        left: 22%;
     }
 
-    &__cardThree__pricing{
+    &__cardThree__pricing {
         border: 1px solid#55DFB4;
         border-radius: 1.125rem;
-        margin-top: 1rem;
         position: relative;
         display: flex;
-        padding: 3rem;
-        margin: 3rem;
+        padding: 2rem 1rem;
+        margin: 2rem;
+        margin-top: 4rem;
     }
 
-    &__cardThree__pricing__text{
+    &__cardThree__pricing__text {
         font-family: "Raleway";
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
     }
 
-    &__cardThree__pricing__textPricing{
+    &__cardThree__pricing__textPricing {
         font-family: "Open Sans";
-        color:#55DFB4;
+        color: #55DFB4;
         font-weight: 300;
         font-size: 2.875rem;
         line-height: 4rem;
     }
 
-    &__cardThree__pricing__list{
+    &__cardThree__pricing__list {
         list-style: none;
+        padding: 0.3rem;
     }
 
-    &__cardThree__pricing__button{
-        background-color:#55DFB4;
+    &__cardThree__pricing__button {
+        background-color: #55DFB4;
         border-radius: 1.4375rem;
         border: none;
         color: #FFFFFF;
@@ -138,8 +141,33 @@
         font-size: 0.8125rem;
         line-height: 1.1062rem;
         position: absolute;
-        top: 86%;
-        left: 20%;
+        top: 90%;
+        left: 22%;
+    }
+
+    &__cardThree__pricing__textLimited,
+    &__cardTwo__pricing__textLimited {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 0.8806rem;
+    }
+
+    &__cardsItem {
+        margin-right: 0.5rem;
+    }
+
+    &__cardsContent {
+        margin-bottom: 1rem;
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.1919rem;
+    }
+
+    &__cardOne__pricing__ , &__cardTwo__pricing__ , &__cardThree__pricing__{
+        display: flex;
+        align-items: center;
     }
 
 }
