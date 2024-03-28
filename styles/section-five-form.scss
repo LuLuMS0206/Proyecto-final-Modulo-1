@@ -1,6 +1,19 @@
 .section-five-form {
     padding: 3rem 1.5rem;
 
+    @media (min-width: 740px) {
+        display: flex;
+        max-width: 58rem;
+    }
+
+    &__Container{
+        
+            @media (min-width: 740px) {
+                width: 50%;
+                margin-top: 3rem;
+            }
+    }
+
 
     &__title {
         font-family: "Raleway";
@@ -21,8 +34,23 @@
     &__contacts{
         margin-top: 2rem;
 
+        @media (min-width: 740px) {
+            display: flex;
+        }
+
+        &__mail{
+            @media (min-width: 740px) {
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+
         &__call{
             margin-top: 0.5rem;
+            @media (min-width: 740px) {
+                margin-left: 1rem;
+            }
         }
     }
 
@@ -38,6 +66,7 @@
 
         &__icon{
             color: #08A6E4;
+            margin-right: 0.5rem;
         }
     }
 
@@ -79,12 +108,42 @@
             font-weight: 400;
             line-height: 1.0212rem;
             color: #707070;
+            display: inline-block;
+            width: 85%;
+            vertical-align: top;
+        }
+
+        &__check{
+            border-radius: 0.25rem;
+            margin-right: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            appearance: none;
+            border: 0.1rem solid #707070;
+
+            &:checked {
+                background-image: url("img/Checkbox (2).png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         }
     }
 
-    &__content {
+    &__content__ {
         margin-top: 2rem;
+    
+
+        @media (min-width: 740px) {
+            width: 50%;
+        }
     }
+
+    &__content{
+        margin-top: 1rem;
+    }
+
+    
+
 
 
 }

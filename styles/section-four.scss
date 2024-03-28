@@ -1,5 +1,6 @@
 .section-four {
 
+    max-width: 68rem;
 
     &__title {
         font-family: "Raleway";
@@ -13,11 +14,17 @@
     &__cardOne__pricing {
         border: 1px solid #FB3B64;
         border-radius: 1.125rem;
-        // margin-top: 1rem;
         position: relative;
         display: flex;
         padding: 2rem 1rem;
         margin: 2rem;
+
+        @media (min-width: 750px) {
+            display: block;
+            padding: 3rem 4rem;
+            margin-top: 4rem;
+        }
+
     }
 
     &__cardOne__pricing__text {
@@ -38,6 +45,9 @@
     &__cardOne__pricing__list {
         list-style: none;
         padding: 0.3rem;
+        @media (min-width: 750px) {
+            margin-top: 3rem;
+        }
     }
 
     &__cardOne__pricing__button {
@@ -53,6 +63,11 @@
         position: absolute;
         top: 90%;
         left: 22%;
+
+        @media (min-width: 750px) {
+            top: 93%;
+            left: 23%;
+        }
     }
 
     &__cardTwo__pricing {
@@ -63,6 +78,10 @@
         padding: 2rem 1rem;
         margin: 2rem;
         margin-top: 4rem;
+        @media (min-width: 750px) {
+            display: block;
+            padding: 3rem 4rem;
+        }
     }
 
     &__cardTwo__pricing__text {
@@ -83,6 +102,9 @@
     &__cardTwo__pricing__list {
         list-style: none;
         padding: 0.3rem;
+        @media (min-width: 750px) {
+            margin-top: 3rem;
+        }
     }
 
     &__cardTwo__pricing__button {
@@ -98,6 +120,10 @@
         position: absolute;
         top: 90%;
         left: 22%;
+        @media (min-width: 750px) {
+            top: 93%;
+            left: 23%;
+        }
     }
 
     &__cardThree__pricing {
@@ -108,6 +134,10 @@
         padding: 2rem 1rem;
         margin: 2rem;
         margin-top: 4rem;
+        @media (min-width: 750px) {
+            display: block;
+            padding: 3rem 4rem;
+        }
     }
 
     &__cardThree__pricing__text {
@@ -128,6 +158,9 @@
     &__cardThree__pricing__list {
         list-style: none;
         padding: 0.3rem;
+        @media (min-width: 750px) {
+            margin-top: 3rem;
+        }
     }
 
     &__cardThree__pricing__button {
@@ -143,6 +176,10 @@
         position: absolute;
         top: 90%;
         left: 22%;
+        @media (min-width: 750px) {
+            top: 93%;
+            left: 23%;
+        }
     }
 
     &__cardThree__pricing__textLimited,
@@ -165,9 +202,19 @@
         line-height: 1.1919rem;
     }
 
-    &__cardOne__pricing__ , &__cardTwo__pricing__ , &__cardThree__pricing__{
+    &__cardOne__pricing__,
+    &__cardTwo__pricing__,
+    &__cardThree__pricing__ {
         display: flex;
         align-items: center;
     }
 
+}
+
+.styles-generals{
+    @media (min-width: 750px) {
+        text-align: center;
+    justify-content: space-between;
+    }
+    
 }
