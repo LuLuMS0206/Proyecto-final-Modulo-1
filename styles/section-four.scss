@@ -19,56 +19,67 @@
         padding: 2rem 1rem;
         margin: 2rem;
 
+        &:hover{
+            cursor: pointer;
+            box-shadow: 5px 10px 27px 0px  #fa597c5d;
+        }
+
         @media (min-width: 750px) {
             display: block;
             padding: 3rem 4rem;
             margin-top: 4rem;
         }
 
-    }
-
-    &__cardOne__pricing__text {
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-    }
-
-    &__cardOne__pricing__textPricing {
-        font-family: "Open Sans";
-        color: #FB3B64;
-        font-weight: 300;
-        font-size: 2.875rem;
-        line-height: 4rem;
-    }
-
-    &__cardOne__pricing__list {
-        list-style: none;
-        padding: 0.3rem;
-        @media (min-width: 750px) {
-            margin-top: 3rem;
+        &__text {
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
         }
-    }
 
-    &__cardOne__pricing__button {
-        background-color: #FB3B64;
-        border-radius: 1.4375rem;
-        border: none;
-        color: #FFFFFF;
-        padding: 1rem 4rem;
-        font-family: "Open Sans";
-        font-weight: 700;
-        font-size: 0.8125rem;
-        line-height: 1.1062rem;
-        position: absolute;
-        top: 90%;
-        left: 22%;
-
-        @media (min-width: 750px) {
-            top: 93%;
-            left: 23%;
+        &__textPricing {
+            font-family: "Open Sans";
+            color: #FB3B64;
+            font-weight: 300;
+            font-size: 2.875rem;
+            line-height: 4rem;
         }
+
+        &__list {
+            list-style: none;
+            padding: 0.3rem;
+            @media (min-width: 750px) {
+                margin-top: 3rem;
+            }
+        }
+
+        &__button {
+            background-color: #FB3B64;
+            border-radius: 1.4375rem;
+            border: none;
+            color: #FFFFFF;
+            padding: 1rem 4rem;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 0.8125rem;
+            line-height: 1.1062rem;
+            position: absolute;
+            top: 90%;
+            left: 22%;
+    
+            &:hover{
+                cursor: pointer;
+            }
+    
+            @media (min-width: 750px) {
+                top: 93%;
+                left: 23%;
+            }
+        }
+
     }
+
+
 
     &__cardTwo__pricing {
         border: 1px solid #07ACE6;
@@ -78,53 +89,65 @@
         padding: 2rem 1rem;
         margin: 2rem;
         margin-top: 4rem;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 5px 10px 27px 0px #07ACE64A;
+        }
+
         @media (min-width: 750px) {
             display: block;
             padding: 3rem 4rem;
         }
-    }
 
-    &__cardTwo__pricing__text {
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-    }
-
-    &__cardTwo__pricing__textPricing {
-        font-family: "Open Sans";
-        color: #07ACE6;
-        font-weight: 300;
-        font-size: 2.875rem;
-        line-height: 4rem;
-    }
-
-    &__cardTwo__pricing__list {
-        list-style: none;
-        padding: 0.3rem;
-        @media (min-width: 750px) {
-            margin-top: 3rem;
+        &__text {
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
         }
+
+        &__textPricing {
+            font-family: "Open Sans";
+            color: #07ACE6;
+            font-weight: 300;
+            font-size: 2.875rem;
+            line-height: 4rem;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0.3rem;
+            @media (min-width: 750px) {
+                margin-top: 3rem;
+            }
+        }
+
+        &__button {
+            background-color: #07ACE6;
+            border-radius: 1.4375rem;
+            border: none;
+            color: #FFFFFF;
+            padding: 1rem 4rem;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 0.8125rem;
+            line-height: 1.1062rem;
+            position: absolute;
+            top: 90%;
+            left: 22%;
+    
+            &:hover{
+                cursor: pointer;
+            }
+            @media (min-width: 750px) {
+                top: 93%;
+                left: 23%;
+            }
+        }
+
     }
 
-    &__cardTwo__pricing__button {
-        background-color: #07ACE6;
-        border-radius: 1.4375rem;
-        border: none;
-        color: #FFFFFF;
-        padding: 1rem 4rem;
-        font-family: "Open Sans";
-        font-weight: 700;
-        font-size: 0.8125rem;
-        line-height: 1.1062rem;
-        position: absolute;
-        top: 90%;
-        left: 22%;
-        @media (min-width: 750px) {
-            top: 93%;
-            left: 23%;
-        }
-    }
 
     &__cardThree__pricing {
         border: 1px solid#55DFB4;
@@ -139,6 +162,12 @@
             padding: 3rem 4rem;
         }
     }
+
+    &__cardThree__pricing:hover{
+        cursor: pointer;
+        box-shadow: 5px 10px 27px 0px #63eabf74;
+    }
+
 
     &__cardThree__pricing__text {
         font-family: "Raleway";
@@ -176,6 +205,10 @@
         position: absolute;
         top: 90%;
         left: 22%;
+
+        &:hover{
+            cursor: pointer;
+        }
         @media (min-width: 750px) {
             top: 93%;
             left: 23%;

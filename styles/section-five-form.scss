@@ -96,6 +96,11 @@
         margin-top: 2rem;
         display: flex;
         margin-right: 1rem;
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(49, 192, 249);
+        }
     }
 
     &__content__consent {
@@ -127,6 +132,10 @@
                 background-position: center;
             }
         }
+    }
+
+    &__content__consent__check:hover{
+        cursor: pointer;
     }
 
     &__content__ {
