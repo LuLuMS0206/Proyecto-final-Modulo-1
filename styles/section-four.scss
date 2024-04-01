@@ -22,6 +22,8 @@
         &:hover{
             cursor: pointer;
             box-shadow: 5px 10px 27px 0px  #fa597c5d;
+            transform: scale(1.1);
+            transition: transform 0.1s ease;
         }
 
         @media (min-width: 750px) {
@@ -69,6 +71,7 @@
     
             &:hover{
                 cursor: pointer;
+                background-color: #fb6f8d;
             }
     
             @media (min-width: 750px) {
@@ -93,6 +96,8 @@
         &:hover{
             cursor: pointer;
             box-shadow: 5px 10px 27px 0px #07ACE64A;
+            transform: scale(1.1);
+            transition: transform 0.1s ease;
         }
 
         @media (min-width: 750px) {
@@ -139,6 +144,7 @@
     
             &:hover{
                 cursor: pointer;
+                background-color: rgb(49, 192, 249);
             }
             @media (min-width: 750px) {
                 top: 93%;
@@ -166,6 +172,8 @@
     &__cardThree__pricing:hover{
         cursor: pointer;
         box-shadow: 5px 10px 27px 0px #63eabf74;
+        transform: scale(1.1);
+        transition: transform 0.1s ease;
     }
 
 
@@ -208,6 +216,7 @@
 
         &:hover{
             cursor: pointer;
+            background-color: #90e5ca;
         }
         @media (min-width: 750px) {
             top: 93%;

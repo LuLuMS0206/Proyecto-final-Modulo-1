@@ -410,6 +410,8 @@
 .section-four__cardOne__pricing:hover {
   cursor: pointer;
   box-shadow: 5px 10px 27px 0px rgba(250, 89, 124, 0.3647058824);
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
 }
 @media (min-width: 750px) {
   .section-four__cardOne__pricing {
@@ -456,6 +458,7 @@
 }
 .section-four__cardOne__pricing__button:hover {
   cursor: pointer;
+  background-color: #fb6f8d;
 }
 @media (min-width: 750px) {
   .section-four__cardOne__pricing__button {
@@ -475,6 +478,8 @@
 .section-four__cardTwo__pricing:hover {
   cursor: pointer;
   box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
 }
 @media (min-width: 750px) {
   .section-four__cardTwo__pricing {
@@ -520,6 +525,7 @@
 }
 .section-four__cardTwo__pricing__button:hover {
   cursor: pointer;
+  background-color: rgb(49, 192, 249);
 }
 @media (min-width: 750px) {
   .section-four__cardTwo__pricing__button {
@@ -545,6 +551,8 @@
 .section-four__cardThree__pricing:hover {
   cursor: pointer;
   box-shadow: 5px 10px 27px 0px rgba(99, 234, 191, 0.4549019608);
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
 }
 .section-four__cardThree__pricing__text {
   font-family: "Raleway";
@@ -584,6 +592,7 @@
 }
 .section-four__cardThree__pricing__button:hover {
   cursor: pointer;
+  background-color: #90e5ca;
 }
 @media (min-width: 750px) {
   .section-four__cardThree__pricing__button {
@@ -677,6 +686,10 @@
   line-height: 1.375rem;
   color: #A5A5A5;
   display: inline-flex;
+}
+.section-five-form__contact:hover {
+  cursor: pointer;
+  color: #000000;
 }
 .section-five-form__contact__icon {
   color: #08A6E4;
