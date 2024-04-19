@@ -15,7 +15,7 @@
     &__cardOne {
         margin: 2rem;
         background-color: white;
-        padding: 1.5rem;
+        padding: 2.5rem 4rem;
         border: 1px solid #E8E9ED;
         border-radius: 0.5rem;
 
@@ -70,7 +70,7 @@
     &__cardTwo {
         margin: 2rem;
         background-color: white;
-        padding: 1.5rem;
+        padding: 3.5rem;
         border: 1px solid #E8E9ED;
         border-radius: 0.5rem;
 
@@ -89,7 +89,7 @@
 
         &__img {
             @media (min-width: 740px) {
-                margin-top: 1rem;
+                margin-top: 3rem;
             }
 
         }
@@ -139,6 +139,7 @@
         background-color: white;
         border: 1px solid #E8E9ED;
         border-radius: 0.5rem;
+        padding: 2.5rem;
 
         
         @media (min-width: 740px) {
