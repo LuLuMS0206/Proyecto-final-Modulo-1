@@ -1,66 +1,68 @@
 .navbar {
     box-shadow: 0px 3px 6px 0px #0000004A;
     line-height: 3.5rem;
+}
 
-    &__container {
-        display: inline-block;
+.navbar__container {
+    display: inline-block;
+}
 
-        @media (min-width: 750px) {
-            display: ruby-text;
-        }
-
-        &__logo {
-            margin-left: 1em;
-            font-family: Raleway;
-            font-size: 1.625rem;
-            color: #08A6E4;
-        }
-
-        &__icon {
-            color: #08A6E4;
-            position: absolute;
-            top: 0.5rem;
-            right: 1rem;
-
-            @media (min-width: 750px) {
-                display: none;
-            }
-        }
-
-        &__nav {
-            @media (max-width: 750px) {
-                display: none;
-            }
-
-            &__items {
-                list-style: none;
-            }
-
-            &__itemsList {
-                display: inline-block;
-                margin-right: 3rem;
-                font-family: "Open Sans";
-                font-size: 0.6875rem;
-                font-weight: 700;
-                line-height: 0.9375rem;
-                letter-spacing: 0.205rem;
-                text-align: center;
-                color: #A5A5A5;
-
-                &:hover{
-                    cursor: pointer;
-                    color: #000000;
-                }
-            }
-
-        }
-
+@media (min-width: 750px) {
+    .navbar__container {
+        display: ruby-text;
     }
+}
 
+.navbar__container__logo {
+    margin-left: 1em;
+    font-family: Raleway;
+    font-size: 1.625rem;
+    color: #08A6E4;
+}
 
+.navbar__container__icon {
+    color: #08A6E4;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
 
-    &__container__logo,
-    &container__icon {
-        display: inline-block;
+@media (min-width: 750px) {
+    .navbar__container__icon {
+        display: none;
     }
+}
+
+.navbar__container__nav {
+    // display: none; /* Inicialmente oculto */
+    // position: absolute;
+    // top: 100%; /* Posición debajo del botón */
+    // left: 0;
+    // background-color: white; /* Ajusta el color de fondo según sea necesario */
+    // box-shadow: 0px 3px 6px 0px #0000004A;
+    @media (max-width: 750px) {
+        display: block; 
+    }
+}
+
+
+.navbar__container__nav__items {
+    list-style: none;
+}
+
+.navbar__container__nav__itemsList {
+    display: inline-block;
+    margin-right: 3rem;
+    font-family: "Open Sans";
+    font-size: 0.6875rem;
+    font-weight: 700;
+    line-height: 0.9375rem;
+    letter-spacing: 0.205rem;
+    text-align: center;
+    color: #A5A5A5;
+}
+
+.navbar__container__nav__itemsList:hover {
+    cursor: pointer;
+    color: #000000;
 }

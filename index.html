@@ -24,18 +24,18 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar">
-        <div class="navbar__container">
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container" >
 
             <div class="navbar__container__logo">
                 <p class="navbar__logo">OXYGENShop</p>
             </div>
 
             <div class="navbar__container__icon">
-                <span class="navbar__icon material-symbols-outlined position-absolute"> menu </span>
+                <span class="navbar__icon material-symbols-outlined position-absolute" id="changeNavbar"> menu </span>
             </div>
 
-            <div class="navbar__container__nav">
+            <div class="navbar__container__nav" id="navbar">
                 <ul class="navbar__container__nav__items">
                     <li class="navbar__container__nav__itemsList" >WHY US</li>
                     <li class="navbar__container__nav__itemsList">BENEFITS</li>
@@ -45,6 +45,7 @@
             </div>
         </div>
     </nav>
+    <script src="script.js"></script>
     <!-- end navbar -->
 
     <!-- section one -->
@@ -320,6 +321,12 @@
         </form>
     </section>
     <!-- end section section five form -->
+
+    <!-- create button go home -->
+    <span class="span__button_go">
+        <button class="button__go_home" id="button__go_home">↑</button>
+    </span>
+    <!--end create button go home -->
 
     <!-- section footer -->
 
