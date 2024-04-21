@@ -2,9 +2,11 @@
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
   line-height: 3.5rem;
 }
+
 .navbar__container {
   display: inline-block;
 }
+
 @media (min-width: 750px) {
   .navbar__container {
     display: ruby-text;
@@ -16,12 +18,14 @@
   font-size: 1.625rem;
   color: #08A6E4;
 }
+
 .navbar__container__icon {
   color: #08A6E4;
   position: absolute;
   top: 0.5rem;
   right: 1rem;
 }
+
 @media (min-width: 750px) {
   .navbar__container__icon {
     display: none;
@@ -29,12 +33,14 @@
 }
 @media (max-width: 750px) {
   .navbar__container__nav {
-    display: none;
+    display: block;
   }
 }
+
 .navbar__container__nav__items {
   list-style: none;
 }
+
 .navbar__container__nav__itemsList {
   display: inline-block;
   margin-right: 3rem;
@@ -46,12 +52,10 @@
   text-align: center;
   color: #A5A5A5;
 }
+
 .navbar__container__nav__itemsList:hover {
   cursor: pointer;
   color: #000000;
-}
-.navbar__container__logo, .navbarcontainer__icon {
-  display: inline-block;
 }
 
 .section-one {
@@ -96,7 +100,7 @@
   color: #FFFFFF;
   border: none;
   border-radius: 3rem;
-  padding: 1.25rem 5rem;
+  padding: 1.5rem 9rem;
   font-weight: 700;
   margin-top: 1.5rem;
 }
@@ -111,8 +115,6 @@
   margin-top: 2rem;
   max-width: 68rem;
 }
-
-
 .section-two__title {
   font-weight: 300;
   font-size: 1.875rem;
@@ -219,7 +221,7 @@
 .section-three__cardOne {
   margin: 2rem;
   background-color: white;
-  padding: 1.5rem;
+  padding: 2.5rem 4rem;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
 }
@@ -273,7 +275,7 @@
 .section-three__cardTwo {
   margin: 2rem;
   background-color: white;
-  padding: 1.5rem;
+  padding: 3.5rem;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
 }
@@ -289,7 +291,7 @@
 }
 @media (min-width: 740px) {
   .section-three__cardTwo__img {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 }
 .section-three__cardTwo__imgEllipse {
@@ -332,6 +334,7 @@
   background-color: white;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
+  padding: 2.5rem;
 }
 @media (min-width: 740px) {
   .section-three__cardThree {
