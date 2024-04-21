@@ -15,14 +15,14 @@
     &__cardOne {
         margin: 2rem;
         background-color: white;
-        padding: 2.5rem 4rem;
+        padding: 3rem 2rem;
         border: 1px solid #E8E9ED;
         border-radius: 0.5rem;
 
         @media (min-width: 740px) {
             flex-direction: row-reverse;
             align-items: center;
-            padding: 2.5rem;
+            padding: 2rem 4rem;
         }
     }
 
@@ -70,12 +70,13 @@
     &__cardTwo {
         margin: 2rem;
         background-color: white;
-        padding: 3.5rem;
+        padding: 3rem 2rem;
         border: 1px solid #E8E9ED;
         border-radius: 0.5rem;
 
         @media (min-width: 740px) {
             position: relative;
+            padding: 2rem 2rem;
         }
 
 
@@ -139,7 +140,7 @@
         background-color: white;
         border: 1px solid #E8E9ED;
         border-radius: 0.5rem;
-        padding: 2.5rem;
+        
 
         
         @media (min-width: 740px) {
@@ -157,12 +158,13 @@
     }
 
     &__cardThree__content {
-        padding: 1.5rem;
+        padding: 2rem;
 
         @media (min-width: 740px) {
             border: 1px solid #E8E9ED;
             margin-right: 3rem;
             background-color: white;
+            padding: 2rem 2rem;
         }
     }
 

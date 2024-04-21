@@ -42,9 +42,12 @@
         color: #FFFFFF;
         border: none;
         border-radius: 3rem;
-        padding: 1.50rem 9rem;
+        padding: 1.50rem 8rem;
         font-weight: 700;
         margin-top: 1.5rem;
+        @media (max-width: 740px) {
+            padding: 1rem 5rem;
+        }
 
         &:hover{
             cursor: pointer;
