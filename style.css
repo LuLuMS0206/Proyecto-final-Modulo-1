@@ -120,6 +120,7 @@
   margin-top: 2rem;
   max-width: 68rem;
 }
+
 .section-two__article {
   padding: 0rem 8rem;
 }
@@ -235,6 +236,7 @@
   margin: 2rem;
   background-color: white;
   padding: 3rem 2rem;
+  padding: 2.5rem 4rem;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
 }
@@ -348,6 +350,7 @@
   background-color: white;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
+  padding: 2.5rem;
 }
 @media (min-width: 740px) {
   .section-three__cardThree {
@@ -818,6 +821,26 @@
 }
 .footer__container__iconsFacebook {
   margin-left: 1rem;
+}
+
+.span__button_go {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.span__button_go_home {
+  width: 100%;
+  max-width: 3.5rem;
+  height: 2.5rem;
+  border: none;
+  color: #08a6e4;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px #08a6e4;
 }
 
 * {

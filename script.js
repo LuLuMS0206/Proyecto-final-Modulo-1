@@ -1,3 +1,4 @@
+//menu desplegable
 const changeNavbar = document.getElementById("changeNavbar");
 const navbar = document.getElementById("navbar");
 
@@ -11,7 +12,7 @@ changeNavbar.addEventListener("click", (event) => {
     }
 });
 
-
+//boton go home
 const button_scroll = document.getElementById("button__go_home");
 const body = document.getElementById("body");
 

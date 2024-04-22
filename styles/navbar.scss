@@ -34,12 +34,6 @@
 }
 
 .navbar__container__nav {
-    // display: none; /* Inicialmente oculto */
-    // position: absolute;
-    // top: 100%; /* Posición debajo del botón */
-    // left: 0;
-    // background-color: white; /* Ajusta el color de fondo según sea necesario */
-    // box-shadow: 0px 3px 6px 0px #0000004A;
     @media (max-width: 750px) {
         display: block; 
     }
