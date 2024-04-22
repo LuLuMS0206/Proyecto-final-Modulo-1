@@ -1,21 +1,21 @@
 
-// .span__button_go {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     padding-right: 2rem;
-//     padding-left: 2rem;
+.span__button_go {
+    margin-left: 18rem;
+    // @media (min-width: 750px) {
+    //     margin-left: 70rem;
+    // }
+}
 
-//     &_home{
-//         width: 100%;
-//         max-width: 3.5rem;
-//         height: 2.5rem;
-//         border: none;
-//         color: #08a6e4;
-//         background-color: white;
-//         cursor: pointer;
-//         border-radius: 40px;
-//         box-shadow: 0 2px 5px #08a6e4;
-//     }
-// }
+.button__go_home{
+        width: 100%;
+        max-width: 3.5rem;
+        height: 2.5rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 40px;
+        box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+        background-color: #08A6E4;
+        margin-bottom: 2rem;
+    }
+

@@ -34,6 +34,7 @@
 }
 
 .navbar__container__nav {
+    // display: none;
     @media (max-width: 750px) {
         display: block; 
     }
