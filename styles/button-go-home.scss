@@ -1,0 +1,15 @@
+.button__go_home{
+    width: 100%;
+    max-width: 3.5rem;
+    height: 2.5rem;
+    border: none;
+    color: #08a6e4;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px #08a6e4;
+
+    &__go{
+        display: flex;
+    }
+}
