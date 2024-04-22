@@ -121,14 +121,7 @@
   max-width: 68rem;
 }
 
-.section-two__article {
-  padding: 0rem 8rem;
-}
-@media (max-width: 740px) {
-  .section-two__article {
-    padding: 0rem 0rem;
-  }
-}
+
 .section-two__title {
   font-weight: 300;
   font-size: 1.875rem;
@@ -235,8 +228,7 @@
 .section-three__cardOne {
   margin: 2rem;
   background-color: white;
-  padding: 3rem 2rem;
-  padding: 2.5rem 4rem;
+  padding: 1.5rem;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
 }
@@ -290,7 +282,7 @@
 .section-three__cardTwo {
   margin: 2rem;
   background-color: white;
-  padding: 3rem 2rem;
+  padding: 1.5rem;
   border: 1px solid #E8E9ED;
   border-radius: 0.5rem;
 }
