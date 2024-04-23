@@ -839,11 +839,11 @@
   margin-left: 1rem;
 }
 
-.span__button_go {
-  margin-left: 18rem;
-}
-
 .button__go_home {
+  bottom: 4rem;
+  right: 2rem;
+  z-index: 98;
+  position: fixed;
   width: 100%;
   max-width: 3.5rem;
   height: 2.5rem;
@@ -867,6 +867,31 @@
   height: 2px;
   background-color: #fb3b64;
   margin: 0;
+}
+
+.slider-screen {
+  width: 90%;
+}
+
+.slider-screen img {
+  width: 100%;
+}
+
+.content-popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: 99;
+  display: none;
+}
+.content-popup .popup {
+  width: 60%;
+  height: 20rem;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 10rem;
 }
 
 * {

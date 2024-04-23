@@ -29,7 +29,7 @@
     </div>
     <!-- navbar -->
     <nav class="navbar">
-        <div class="navbar__container" >
+        <div class="navbar__container">
 
             <div class="navbar__container__logo">
                 <p class="navbar__logo">OXYGENShop</p>
@@ -41,7 +41,7 @@
 
             <div class="navbar__container__nav" id="navbar">
                 <ul class="navbar__container__nav__items">
-                    <li class="navbar__container__nav__itemsList" >WHY US</li>
+                    <li class="navbar__container__nav__itemsList">WHY US</li>
                     <li class="navbar__container__nav__itemsList">BENEFITS</li>
                     <li class="navbar__container__nav__itemsList">PRICES</li>
                     <li class="navbar__container__nav__itemsList">CONTACT</li>
@@ -49,8 +49,19 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- end navbar -->
+
+    <!-- section popup -->
+    <div class="content-popup" id="content-popup">
+        <div class="popup">
+            <span class="material-symbols-outlined" id="close">
+                close
+            </span>
+        </div>
+    </div>
+
+    <!-- end section popup -->
 
     <!-- section one -->
     <header class="section-one">
@@ -107,7 +118,7 @@
                     <img class="section-three__cardOne__imgMack" src="img/Macbook2 2.png" alt="" />
                     <img class="section-three__cardOne__imgFrame" src="img/Frame 11.png" alt="" />
                 </div>
-    
+
                 <div class="section-three__cardOne__content">
                     <h1 class="section-three__cardOne__content__title">
                         Be always first
@@ -121,15 +132,15 @@
                     <div class="line-card red"></div>
                 </div>
 
-                
+
             </article>
-    
+
             <article class="section-three__cardTwo flex">
                 <div class="section-three__cardTwo__img">
                     <img class="section-three__cardTwo__imgEllipse" src="img/Ellipse 3.png" alt="" />
                     <img class="section-three__cardTwo__imgIphone" src="img/iPhone2 2.png" alt="" />
                 </div>
-    
+
                 <div class="section-three__cardTwo__content">
                     <h1 class="section-three__cardTwo__content__title">
                         Your shop is where you are!
@@ -143,9 +154,9 @@
                     <div class="line-card blue"></div>
                 </div>
 
-                
+
             </article>
-    
+
             <article class="section-three__cardThree flex">
                 <div class="section-three__cardThree__content">
                     <h1 class="section-three__cardThree__content__title">
@@ -159,15 +170,15 @@
 
                     <div class="line-card green"></div>
                 </div>
-    
+
                 <div class="section-three__cardThree__img">
                     <img class="section-three__cardThree__imgTrumpet" src="img/Trumpet 2.png" alt="" />
                 </div>
 
-                
+
             </article>
         </div>
-        
+
     </section>
     <!-- end section three -->
 
@@ -256,13 +267,26 @@
     <!-- end section four -->
 
     <!-- section slider -->
-<section class="section-slider">
-<div id="slider" class="slider">
-<img src="https://picography.co/gradient-night-sky-stars/" alt="">
-<img src="https://isorepublic.com/photo/soft-focus-art/" alt="">
-<img src="" alt="">
-</div>
-</section>
+    <section class="section-slider">
+
+        <div class="slider-screen">
+            <img name = "imagen" src="" alt="">
+        </div>
+
+        <div class="slider-izquierdo">
+            <span class="material-symbols-outlined">
+                navigate_before
+            </span>
+        </div>
+
+        <div class="slider-derecho">
+            <span class="material-symbols-outlined">
+                navigate_next
+            </span>
+        </div>
+
+
+    </section>
 
     <!-- end section slider -->
 
@@ -274,7 +298,7 @@
                 <h2 class="section-five-form__title">Any questions?</h2>
                 <p class="section-five-form__text">Leave your email address or call us!</p>
             </div>
-    
+
             <div class="section-five-form__contacts">
                 <div class="section-five-form__contacts__mail">
                     <a class="section-five-form__contact" href="mailto:info@bestshop.xyz">
@@ -284,7 +308,7 @@
                         info@bestshop.xyz
                     </a>
                 </div>
-    
+
                 <div class="section-five-form__contacts__call">
                     <a class="section-five-form__contact" href="tel:123 456 789">
                         <span class="section-five-form__contact__icon material-symbols-outlined">
@@ -295,7 +319,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
         <form class="section-five-form__content__" action="#" method="post">
@@ -321,7 +345,7 @@
             </div>
 
             <div class="section-five-form__content__consent">
-                <input class="section-five-form__content__consent__check" type="checkbox" id="consent" name="consent"
+                <input class="section-five-form__content__consent__check" type="checkbox" id="check" name="consent"
                     required>
                 <label class="section-five-form__content__consent__label" for="consent">I hereby give consent for my
                     personal data included in my
