@@ -53,14 +53,24 @@
     <!-- end navbar -->
 
     <!-- section popup -->
-    <div class="content-popup" id="content-popup">
+    <dialog class="content-popup" id="content-popup">
         <div class="popup">
             <span class="material-symbols-outlined close" id="close">
                 close
             </span>
             <p class="text-popup">‘Subscribe to our newsletter’ </p>
+            
+        <div>
+            <label class="pop-up-modal__label" for="newsletterNameInput" id="newsletterNameLabel">First name:</label>
+            <input class="pop-up-modal__input" type="text" id="newsletterNameInput"/>
+            <label class="pop-up-modal__label" for="newsletterEmailInput" id="newsletterEmailLabel">Email:</label>
+            <input class="pop-up-modal__input" type="text" id="newsletterEmailInput"/>
+            <button class="pop-up-modal__button" type="submit" id="newsletterSubmitBtn">Get free eBook</button>
         </div>
-    </div>
+        </div>
+
+
+    </dialog>
 
     <!-- end section popup -->
 
@@ -187,11 +197,11 @@
     <section class="section-four">
         <h1 class="section-four__title">Pricing</h1>
 
-        <select id="select" class="select">
-            <option value="opcion1">EUR</option>
-            <option value="opcion2">USD</option>
-            <option value="opcion3">GBP</option>
-        </select>
+        
+            <button id="opcion1" value="opcion1">EUR</button>
+            <button id="opcion2" value="opcion2">USD</button>
+            <button id="opcion3" value="opcion3">GBP</button>
+    
 
         <div class="flex styles-generals">
             <article class="section-four__cardOne__pricing">
@@ -199,7 +209,7 @@
                 <div class="section-four__cardOne__pricing__">
                     <div>
                         <p class="section-four__cardOne__pricing__text">Basic</p>
-                        <p class="section-four__cardOne__pricing__textPricing">$0</p>
+                        <p class="section-four__cardOne__pricing__textPricing" id="basic">$0</p>
                     </div>
                 </div>
 
@@ -223,7 +233,7 @@
                 <div class="section-four__cardTwo__pricing__">
                     <div>
                         <p class="section-four__cardTwo__pricing__text">Professional</p>
-                        <p class="section-four__cardTwo__pricing__textPricing">$25</p>
+                        <p class="section-four__cardTwo__pricing__textPricing" id="professional">$25</p>
                         <p class="section-four__cardTwo__pricing__textLimited">Limited offer</p>
                     </div>
                 </div>
@@ -248,7 +258,7 @@
                 <div class="section-four__cardThree__pricing__">
                     <div>
                         <p class="section-four__cardThree__pricing__text">Premium</p>
-                        <p class="section-four__cardThree__pricing__textPricing">$60</p>
+                        <p class="section-four__cardThree__pricing__textPricing" id="premium">$60</p>
                         <p class="section-four__cardThree__pricing__textLimited">Limited offer</p>
                     </div>
 
@@ -397,7 +407,14 @@
     </footer>
 
     <!-- end section footer -->
-    <script src="script.js"></script>
+    <script src="scriptJs/botonHome.js"></script>
+    <script src="scriptJs/conversor.js"></script>
+    <script src="scriptJs/formulario.js"></script>
+    <script src="scriptJs/menu.js"></script>
+    <script src="scriptJs/popup.js"></script>
+    <script src="scriptJs/scroll.js"></script>
+    <script src="scriptJs/slider.js"></script>
+
 </body>
 
 </html>

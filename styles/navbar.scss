@@ -56,7 +56,8 @@
 .navbar__container__nav__items {
     list-style: none;
     @media (max-width: 750px) {
-        display: inline-grid;
+        display: table-caption;
+        margin-top: 1rem;
     }
 }
 
@@ -70,10 +71,6 @@
     letter-spacing: 0.205rem;
     text-align: center;
     color: #A5A5A5;
-    @media (max-width: 750px) {
-        margin-bottom: 0.5rem;
-margin-right: 0.5rem;
-    }
 }
 
 .navbar__container__nav__itemsList:hover {
