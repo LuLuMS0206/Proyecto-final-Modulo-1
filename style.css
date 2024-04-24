@@ -884,7 +884,7 @@
 }
 
 .slider-screen {
-  width: 90%;
+  width: 70%;
 }
 
 .slider-screen img {
@@ -892,7 +892,7 @@
 }
 
 .section-slider {
-  width: 70%;
+  width: 75%;
   margin-top: 4rem;
 }
 @media (max-width: 750px) {
