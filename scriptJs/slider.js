@@ -1,37 +1,41 @@
-
-//Slider
-//tiene que ir en una clase
-const imagenes = [
-    "img/imagen1.jpg",
-    "img/imagen2.jpg",
-    "img/imagen3.jpg",
-    "img/imagen4.jpg"
-];
-
-document.imagen.src = imagenes[0];
-
-const sliderDerecho = document.querySelector(".slider-derecho");
-const sliderIzquierdo = document.querySelector(".slider-izquierdo");
-let contador = 0;
-
-
-//funcion para el icono derecho
-function moverDerecha() {
-    contador++;
-    if (contador > imagenes.length - 1) {
-        contador = 0;
+class Slider {
+    constructor(sliderId) {
+        this.sliderElement = document.getElementById(sliderId);
+        this.imagenElement = this.sliderElement.querySelector('img[name="imagen"]');
+        this.imagenes = [
+            "img/imagen1.jpg",
+            "img/imagen2.jpg",
+            "img/imagen3.jpg",
+            "img/imagen4.jpg"
+        ];
+        this.contador = 0;
+        this.init();
     }
-    document.imagen.src = imagenes[contador];
+
+    init() {
+        this.imagenElement.src = this.imagenes[0];
+        const sliderDerecho = this.sliderElement.querySelector('.slider-derecho');
+        const sliderIzquierdo = this.sliderElement.querySelector('.slider-izquierdo');
+
+        sliderDerecho.addEventListener("click", () => this.moverDerecha());
+        sliderIzquierdo.addEventListener("click", () => this.moverIzquierda());
+    }
+
+    moverDerecha() {
+        this.contador++;
+        if (this.contador > this.imagenes.length - 1) {
+            this.contador = 0;
+        }
+        this.imagenElement.src = this.imagenes[this.contador];
+    }
+
+    moverIzquierda() {
+        this.contador--;
+        if (this.contador < 0) {
+            this.contador = this.imagenes.length - 1;
+        }
+        this.imagenElement.src = this.imagenes[this.contador];
+    }
 }
 
-sliderDerecho.addEventListener("click", moverDerecha);
-
-//funcion para el icono izq
-function moverIzquierda(){
-contador--;
-if(contador < 0){
-    contador = imagenes.length - 1;
-}
-document.imagen.src = imagenes[contador];
-}
-sliderIzquierdo.addEventListener("click", moverIzquierda);
+const slider = new Slider('section-slider');

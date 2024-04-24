@@ -1,80 +1,65 @@
 
-
-//Validación del formulario
-
-const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-let inputName = document.getElementById('name');
-let inputEmail = document.getElementById('email');
-let inputCheckbox = document.getElementById('check');
-
- //funcion validacion nombre
-
-const validName = () => {
-    if(inputName.value.length <= 2 || inputName.value.length > 100) {
-        inputName.style.border = '0.2rem solid #FB3B64';
-        return false;
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const inputName = document.getElementById('name');
+    const userName = inputName.value;
+    const inputEmail = document.getElementById('email');
+    const userEmail = inputEmail.value;
+    const inputCheckbox = document.getElementById('check');
+    let checkedCorrect = false;
+    let nameCorrect = false;
+    let emailCorrect = false;
+    event.preventDefault();
+    if (userName.length < 2 || userName.length > 100) {
+        inputName.style.cssText = 'border-bottom: 0.2rem solid red';
+        alert ('Enter name valid');
+        
     } else {
-
-        inputName.style.border = '0.2rem solid #63eabf74';
-        return true;
+        inputName.style.cssText = '';
+        inputName.value = '';
+        nameCorrect = true;
     }
-}
-inputName.onchange = () => validName(); //Asignamos el evento onchange a nuestro input y cada vez que cambie su estado llama a la funcion validName();
 
- //funcion validación email
-
-const validEmail = () => {
-    //Cuando el valor del inputEmail sea diferente a la variable con la expresion regular
-    if(!regex.test(inputEmail.value)) {
-    
-        inputEmail.style.border = '0.2rem solid #FB3B64';
-        return false
+    if (!regex.test(userEmail)) {
+        inputEmail.style.cssText = 'border-bottom: 0.2rem solid red';
+        alert ('Enter mail valid');
     } else {
-
-        inputEmail.style.border = '0.2rem solid #63eabf74';
-        return true
+        inputEmail.style.cssText = '';
+        inputEmail.value = '';
+        emailCorrect = true;
     }
-}
 
-inputEmail.onchange = () => validEmail(); //Asignamos el evento onchange a nuestro inputEmail y cada vez que cambie su estado llama a la funcion validEmail();
-
-//funcion validacion checkbox
-
-const validCheck = () => {
-    //Si nuestro check es distinto de checked
-    if(!inputCheckbox.checked) {
-    
-        inputCheckbox.style.border = '0.2rem solid #FB3B64';
-        return false;
+    if (!inputCheckbox.checked) {
+        inputCheckbox.style.cssText = 'border: 0.2rem solid red';
+        alert ('accept terms and conditions');
     } else {
-        //Dejamos nuestro input por defecto
-        inputCheckbox.style.border = '';
-        return true;
+        inputCheckbox.style.cssText = '';
+        inputCheckbox.checked = false;
+        checkedCorrect = true;
     }
-}
 
-inputCheckbox.onchange = () => validCheck();//Asignamos el evento onchange a nuestro check y cada vez que cambie su estado llama a la funcion validCheck();
-//Recoger los datos del formulario y mandarselos a una API de testing
 
-if (validCheck()) {
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-    method: 'POST',
-    body: JSON.stringify({
-        name: userName,
-        email: userEmail,
-        userId: 1,
-    }),
-    headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-    },
+    const url = 'https://jsonplaceholder.typicode.com/posts';
+    if (nameCorrect && emailCorrect && checkedCorrect) {
+    fetch(url, {
+        method: 'POST',
+        body: {
+            name: userName,
+            email: userEmail
+        }
+    }).then((response) => {
+        if (response.ok) {
+            response.json()
+            .then((json) => {
+                console.log(json);
+                alert ('User add successful');
+            })
+            .catch((error) => console.log(error)); 
+        }
     })
-    .then((response) => response.json())
-    .then((json) => { 
-        console.log(json); 
-        alert("Form submitted successfully")
-    }) 
-    .catch((error) => console.error('Error:', error));
-}
+    }
+})
 
 
 
