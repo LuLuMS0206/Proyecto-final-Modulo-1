@@ -55,9 +55,10 @@
     <!-- section popup -->
     <div class="content-popup" id="content-popup">
         <div class="popup">
-            <span class="material-symbols-outlined" id="close">
+            <span class="material-symbols-outlined close" id="close">
                 close
             </span>
+            <p class="text-popup">‘Subscribe to our newsletter’ </p>
         </div>
     </div>
 
@@ -185,6 +186,13 @@
     <!-- section four -->
     <section class="section-four">
         <h1 class="section-four__title">Pricing</h1>
+
+        <select id="select" class="select">
+            <option value="opcion1">EUR</option>
+            <option value="opcion2">USD</option>
+            <option value="opcion3">GBP</option>
+        </select>
+
         <div class="flex styles-generals">
             <article class="section-four__cardOne__pricing">
 
@@ -273,17 +281,21 @@
             <img name = "imagen" src="" alt="">
         </div>
 
-        <div class="slider-izquierdo">
-            <span class="material-symbols-outlined">
-                navigate_before
-            </span>
+        <div class="slider-icon">
+            <div class="slider-izquierdo">
+                <span class="material-symbols-outlined">
+                    navigate_before
+                </span>
+            </div>
+    
+            <div class="slider-derecho">
+                <span class="material-symbols-outlined">
+                    navigate_next
+                </span>
+            </div>
         </div>
 
-        <div class="slider-derecho">
-            <span class="material-symbols-outlined">
-                navigate_next
-            </span>
-        </div>
+    
 
 
     </section>

@@ -6,8 +6,18 @@
     width: 100%;
 }
 
-// .section-slider{
-//     display: flex;
-//     align-items: center;
+.section-slider{
+    width: 70%;
+    margin-top: 4rem;
 
-// }
+    @media (max-width: 750px) {
+    width: 100%;
+    }
+
+}
+
+.slider-icon{
+    display: flex;
+    margin-top: 2rem;
+    cursor: pointer;
+}

@@ -15,5 +15,9 @@
         box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
         background-color: #08A6E4;
         margin-bottom: 2rem;
+
+        @media (max-width: 750px) {
+            bottom: 10rem;
+            }
     }
 
