@@ -9,10 +9,22 @@
 
     .popup{
         width: 60%;
-        height: 20rem;
+        height: 15rem;
         margin: 0 auto;
         background-color:white;
-        // z-index: 999;
         margin-top: 10rem;
     }
+}
+
+.close{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.text-popup{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2rem;
+    margin-top: 4rem;
 }

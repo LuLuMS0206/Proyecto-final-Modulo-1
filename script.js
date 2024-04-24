@@ -38,7 +38,9 @@ window.addEventListener('load', () => {
 function scroll () {
     scrollerProgress.style.width = `${((window.scrollY) / (document.body.scrollHeight - window.innerHeight)*100)}%`;
     requestAnimationFrame(scroll);
+    console.log(window.scrollY)
 }
+
 
 //validación del formulario
 
@@ -65,7 +67,7 @@ inputName.onchange = () => validName(); //Asignamos el evento onchange a nuestro
 
  //Funcion validación email
 
- const validEmail = () => {
+const validEmail = () => {
     //Cuando el valor del inputEmail sea diferente a la variable con la expresion regular
     if(!regex.test(inputEmail.value)) {
         //Asignamos el borde del input de color rojo
@@ -140,7 +142,7 @@ const contentPopup = document.getElementById("content-popup");
 
 //mostrar el popup despues de 5 segundos
 setTimeout(() => {
-    contentPopup.style.display = 'initial'
+    contentPopup.style.display = 'initial' 
 }, 5000);
 
 
@@ -159,4 +161,24 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         contentPopup.style.display = 'none';
     }
+});
+
+//conversor 
+
+let url = 'https://github.com/fawazahmed0/exchange-api (https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json)'
+
+const request = fetch(url)
+.then((response) => {
+    if (response.ok) {
+        return response.json(); // Devuelve la promesa con el JSON parseado
+    } else {
+        throw new Error('Error en la solicitud'); // Lanza un error si hay un problema con la respuesta
+    }
+})
+.then((jsonData) => {
+    const arrayRick = jsonData.results; // Almacena los resultados en la variable arrayRick
+    // Haz lo que necesites hacer con arrayRick aquí
+})
+.catch((error) => {
+    console.error('Error:', error); // Maneja los errores de la solicitud o del JSON
 });
