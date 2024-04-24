@@ -13,6 +13,10 @@
         margin: 0 auto;
         background-color:white;
         margin-top: 10rem;
+        @media (max-width: 750px) {
+            width: 72%;
+            height: 10rem;
+            }
     }
 }
 
@@ -27,4 +31,8 @@
     font-family: Raleway;
     font-size: 2rem;
     margin-top: 4rem;
+    @media (max-width: 750px) {
+        font-size: 1rem;
+        margin-top: 2rem;
+        }
 }

@@ -7,6 +7,15 @@
     line-height: 2.5rem;
   }
 }
+@media (min-width: 750px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+  }
+}
 
 .navbar__container {
   display: inline-block;
@@ -866,10 +875,15 @@
   height: 2px;
   position: fixed;
 }
+@media (min-width: 750px) {
+  .div__complet_sscroller {
+    top: 3.75rem;
+  }
+}
 
 .scrollerProgress {
   width: 0%;
-  height: 2px;
+  height: 3px;
   background-color: #fb3b64;
   margin: 0;
 }
@@ -914,6 +928,12 @@
   background-color: white;
   margin-top: 10rem;
 }
+@media (max-width: 750px) {
+  .content-popup .popup {
+    width: 72%;
+    height: 10rem;
+  }
+}
 
 .close {
   margin-top: 1rem;
@@ -926,6 +946,12 @@
   font-family: Raleway;
   font-size: 2rem;
   margin-top: 4rem;
+}
+@media (max-width: 750px) {
+  .text-popup {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
 }
 
 .select {
