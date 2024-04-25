@@ -73,9 +73,20 @@
     letter-spacing: 0.205rem;
     text-align: center;
     color: #A5A5A5;
-}
 
-.navbar__container__nav__itemsList:hover {
-    cursor: pointer;
-    color: #000000;
+    a{
+        text-decoration: none;
+        color: #A5A5A5;
+
+        &:hover{
+            cursor: pointer;
+            color: black;
+            text-decoration: underline 0.3rem solid #08A6E4;
+            text-underline-offset: 1.5em;
+            @media (max-width: 750px) {
+            text-decoration: none;
+            }
+        
+        }
+    }
 }
