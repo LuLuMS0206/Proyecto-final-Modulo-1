@@ -948,8 +948,42 @@
   }
 }
 
-#opcion1 #opcion2 #opcion3 {
+.select {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#opcion1 {
   background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+#opcion1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+#opcion2 {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+#opcion2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+#opcion3 {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+#opcion3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 * {
