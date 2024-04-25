@@ -75,10 +75,20 @@
   text-align: center;
   color: #A5A5A5;
 }
-
-.navbar__container__nav__itemsList:hover {
+.navbar__container__nav__itemsList a {
+  text-decoration: none;
+  color: #A5A5A5;
+}
+.navbar__container__nav__itemsList a:hover {
   cursor: pointer;
-  color: #000000;
+  color: black;
+  text-decoration: underline 0.3rem solid #08A6E4;
+  text-underline-offset: 1.5em;
+}
+@media (max-width: 750px) {
+  .navbar__container__nav__itemsList a:hover {
+    text-decoration: none;
+  }
 }
 
 .section-one {
