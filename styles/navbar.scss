@@ -15,9 +15,9 @@
             }
 }
 
-.navbar__container {
-    display: inline-block;
-}
+// .navbar__container {
+//     display: inline-block;
+// }
 
 @media (min-width: 750px) {
     .navbar__container {
@@ -48,7 +48,7 @@
 .navbar__container__nav {
     display: none;
     @media (min-width: 750px) {
-        display: inline-block; 
+        display: inline-block !important; 
     }
 }
 
