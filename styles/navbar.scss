@@ -19,12 +19,18 @@
 //     display: inline-block;
 // }
 
+
 @media (min-width: 750px) {
     .navbar__container {
-        align-items: center;
-        text-align: center;
         display: flex;
-    
+    justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar__container {
+        display: flex;
+    justify-content: space-between;
     }
 }
 
@@ -80,7 +86,7 @@
     }
 
     @media (min-width: 1500px) {
-        margin-left: 50rem;
+        margin-left: 52rem;
     }
 }
 
