@@ -25,6 +25,3 @@ function openMenu(){
     menuState = !menuState
     menuState ? navbar.style.display = "block" : navbar.style.display = "none";
 }
-
-navbar.style.display = "none" && window.innerWidth >= 750 ? navbar.style.display = "block" : console.log('ERE UN MIARMA')
-console.log(window.innerWidth)
